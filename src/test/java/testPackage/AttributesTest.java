@@ -17,6 +17,7 @@ public class AttributesTest extends BaseClass{
 	public void moveToOrganizationPage() {
 		hp.clickOrganizationLink();
 		System.out.println("Smoke1");
+		System.out.println("Adding changes and push to Git");
 	}
 	
 	@Test(groups = "integration")
