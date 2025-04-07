@@ -10,6 +10,7 @@ public class Scenario1 extends BaseClass{
 	public void moveToLeadpage() {
 		hp.clickLeadsLink();
 		System.out.println("adhoc1");
+		System.out.println("New Line");
 	}
 	
 	@Test(groups = "adhoc")
