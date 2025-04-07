@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VTigerSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="VTigerTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testPackage.ContactTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- testPackage.ContactTest -->
+    </classes>
+  </test> <!-- VTigerTest(failed) -->
+</suite> <!-- Failed suite [VTigerSuite] -->

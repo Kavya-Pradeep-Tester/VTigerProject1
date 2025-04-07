@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ParallelSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="testPackage.ContactTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- testPackage.ContactTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="test2(failed)">
+    <classes>
+      <class name="testPackage.Scenario1">
+        <methods>
+          <include name="login"/>
+          <include name="moveToOrganizationPage"/>
+          <include name="logout"/>
+          <include name="moveToLeadpage"/>
+        </methods>
+      </class> <!-- testPackage.Scenario1 -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" parallel="tests" name="test3(failed)">
+    <classes>
+      <class name="testPackage.OrganizationTest">
+        <methods>
+          <include name="login"/>
+          <include name="createOrganization"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testPackage.OrganizationTest -->
+    </classes>
+  </test> <!-- test3(failed) -->
+  <test thread-count="5" parallel="tests" name="test4(failed)">
+    <classes>
+      <class name="testPackage.Attributes">
+        <methods>
+          <include name="moveToContactsPage"/>
+          <include name="login"/>
+          <include name="moveToLeadspage"/>
+          <include name="moveToCalenderPage"/>
+          <include name="logout"/>
+          <include name="moveToOrganizationPage"/>
+        </methods>
+      </class> <!-- testPackage.Attributes -->
+    </classes>
+  </test> <!-- test4(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->
